@@ -1,0 +1,114 @@
+.root {
+    -fx-background-color: #1c1c1c;
+    -fx-text-fill: white;
+    -fx-base: black;
+}
+
+.button {
+    -fx-background-color: grey;
+    -fx-text-fill: white;
+}
+
+.button:hover {
+    -fx-background-color: lightgrey;
+    -fx-text-fill: black;
+}
+
+.choice-box {
+    -fx-background-color: grey;
+    -fx-text-fill: white;
+}
+
+.choice-box .label:hover {
+    -fx-background-color: lightgrey;
+    -fx-text-fill: black;
+}
+
+.text-field {
+    -fx-background-color: darkgrey;
+    -fx-text-inner-color: white;
+}
+
+.check-box {
+    -fx-text-fill: white;
+}
+
+.label {
+    -fx-text-fill: white;
+}
+
+GridPane Line {
+    -fx-stroke: white;
+}
+
+GridPane Label {
+    -fx-border-color: white;
+}
+
+GridPane GridPane Label {
+    -fx-border-width: 0;
+}
+
+.sudokuGridSelectedRowAndColum {
+    -fx-background-color: grey;
+}
+
+.sudokuLabelGiven {
+    -fx-text-fill: white;
+}
+
+-sudokuLabelCorrect {
+    -fx-text-fill: green;
+}
+
+.sudokuLabelIncorrect {
+    -fx-text-fill: red;
+}
+
+.toggle-button {
+    -fx-background-color: grey;
+    -fx-text-fill: white;
+}
+
+.toggle-button:hover {
+    -fx-background-color: lightgrey;
+    -fx-text-fill: black;
+}
+
+.toggle-button:selected {
+    -fx-background-color: lightgrey;
+    -fx-text-fill: black;
+}
+
+.dialog-pane {
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}
+
+/**Customization of The Bar where the buttons are located**/
+.dialog-pane > .button-bar > .container {
+
+}
+
+/**Alert Content**/
+.dialog-pane > .content.label {
+    -fx-padding: 0.5em 0.5em 0.5em 0.5em;
+    -fx-font-size: 15px;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-background-radius: 10px;
+    -fx-font-size: 40px;
+}
+
+
+/**Customization of Buttons**/
+.dialog-pane .button {
+    -fx-wrap-text: true;
+    -fx-effect: dropshadow(three-pass-box, black, 10.0, 0.0, 0.0, 0.0);
+    -fx-cursor: hand;
+}
+
+.dialog-pane .button:hover {
+    -fx-font-weight: bold;
+}

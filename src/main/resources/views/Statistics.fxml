@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" prefHeight="650.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.zhaw.pm2.amongdigits.controller.StatisticsController">
+    <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <top>
+            <VBox prefHeight="100.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+                <children>
+                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="800.0">
+                        <children>
+                            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                                <children>
+                                    <Button fx:id="mainMenu" minHeight="30.0" minWidth="80.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="80.0" text="%main_menu">
+                                        <padding>
+                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                        </padding>
+                                    </Button>
+                                </children>
+                            </HBox>
+                            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
+                                <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" minHeight="50.0" prefWidth="400.0" text="%your_stats" textAlignment="CENTER">
+                                        <font>
+                                            <Font size="40.0" />
+                                        </font>
+                                    </Label>
+                                </children>
+                            </HBox>
+                            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" />
+                        </children>
+                    </HBox>
+                    <Separator prefWidth="200.0" />
+                </children>
+            </VBox>
+        </top>
+        <center>
+            <HBox alignment="CENTER" minHeight="300.0" minWidth="300.0" prefHeight="300.0" prefWidth="300.0" spacing="20.0" BorderPane.alignment="CENTER">
+                <ImageView fitHeight="251.0" fitWidth="251.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../media/Statistics.gif" />
+                    </image>
+                </ImageView>
+                <VBox alignment="CENTER" minHeight="200.0" minWidth="500.0" prefHeight="200.0" prefWidth="500.0" spacing="10.0">
+                    <children>
+                        <VBox prefHeight="200.0" prefWidth="100.0">
+                            <children>
+                                <HBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="200.0" spacing="25.0">
+                                    <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0">
+                                        <padding>
+                                            <Insets bottom="5.0" />
+                                        </padding>
+                                        <Label minHeight="21.0">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <Label minWidth="120.0" text="%games_started">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="42.0" layoutY="10.0" text="%games_won">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="42.0" layoutY="31.0" text="%time_played">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="42.0" layoutY="53.0" text="%mistakes_made">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <Label layoutX="42.0" layoutY="74.0" text="%best_time">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Label>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" layoutX="155.0" layoutY="10.0" prefHeight="200.0" prefWidth="80.0" spacing="5.0">
+                                        <padding>
+                                            <Insets bottom="5.0" />
+                                        </padding>
+                                        <children>
+                                            <Label text="%beginner">
+                                                <font>
+                                                    <Font size="15.0" />
+                                                </font>
+                                            </Label>
+                                            <Label fx:id="veryEasyGameStarted" text="veryEasyGameStarted">
+                                                <font>
+                                                    <Font size="15.0" />
+                                                </font>
+                                            </Label>
+                                            <Label fx:id="veryEasyGameWon" layoutX="42.0" layoutY="10.0" text="veryEasyGameWon">
+                                                <font>
+                                                    <Font size="15.0" />
+                                                </font>
+                                            </Label>
+                                            <Label fx:id="veryEasyGameTimePlayed" layoutX="42.0" layoutY="31.0" text="veryEasyGameTimePlayed">
+                                                <font>
+                                                    <Font size="15.0" />
+                                                </font>
+                                            </Label>
+                                            <Label fx:id="veryEasyGameMistakes" layoutX="42.0" layoutY="53.0" text="veryEasyGameMistakesMade">
+                                                <font>
+                                                    <Font size="15.0" />
+                                                </font>
+                                            </Label>
+                                            <Label fx:id="veryEasyGameBestTime" layoutX="42.0" layoutY="74.0" text="veryEasyGameBestTime">
+                                                <font>
+                                                    <Font size="15.0" />
+                                                </font>
+                                            </Label>
+                                        </children>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" layoutX="210.0" layoutY="10.0" prefHeight="200.0" prefWidth="80.0" spacing="5.0">
+                                        <padding>
+                                            <Insets bottom="5.0" />
+                                        </padding>
+                                        <Label text="%easy">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="easyGameStarted" text="easyGameStarted">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="easyGameWon" layoutX="42.0" layoutY="10.0" text="easyGameWon">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="easyGameTimePlayed" layoutX="42.0" layoutY="31.0" text="easyGameTimePlayed">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="easyGameMistakes" layoutX="42.0" layoutY="53.0" text="easyGameMistakesMade">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Label>
+                                        <Label fx:id="easyGameBestTime" layoutX="42.0" layoutY="74.0" text="easyGameBestTime">
+                                            <font>
+                                                <Font size="15.0" />
+                                            </font>
+                                        </Label>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" layoutX="273.0" layoutY="10.0" prefHeight="200.0" prefWidth="80.0" spacing="5.0">
+                                        <children>
+                                            <Label text="%medium">
+                                                <font>
+                                                    <Font size="15.0" />
+                                                </font>
+                                            </Label>
+                                            <Label fx:id="mediumGameStarted" text="mediumGameStarted">
+                                                <font>
+                                                    <Font size="15.0" />
+                                                </font>
+                                            </Label>
+                                            <Label fx:id="mediumGameWon" layoutX="42.0" layoutY="10.0" text="mediumGameWon">
+                                                <font>
+                                                    <Font size="15.0" />
+                                                </font>
+                                            </Label>
+                                            <Label fx:id="mediumGameTimePlayed" layoutX="42.0" layoutY="31.0" text="mediumGameTimePlayed">
+                                                <font>
+                                                    <Font size="15.0" />
+                                                </font>
+                                            </Label>
+                                            <Label fx:id="mediumGameMistakes" layoutX="42.0" layoutY="53.0" text="mediumGameMistakesMade">
+                                                <font>
+                                                    <Font size="15.0" />
+                                                </font>
+                                            </Label>
+                                            <Label fx:id="mediumGameBestTime" layoutX="42.0" layoutY="74.0" text="mediumGameBestTime">
+                                                <font>
+                                                    <Font size="15.0" />
+                                                </font>
+                                            </Label>
+                                        </children>
+                                        <padding>
+                                            <Insets bottom="5.0" />
+                                        </padding>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" layoutX="335.0" layoutY="10.0" prefHeight="200.0" prefWidth="80.0" spacing="5.0">
+                                        <children>
+                                            <Label text="%hard">
+                                                <font>
+                                                    <Font size="15.0" />
+                                                </font>
+                                            </Label>
+                                            <Label fx:id="hardGameStarted" text="hardGameStarted">
+                                                <font>
+                                                    <Font size="15.0" />
+                                                </font>
+                                            </Label>
+                                            <Label fx:id="hardGameWon" layoutX="42.0" layoutY="10.0" text="hardGameWon">
+                                                <font>
+                                                    <Font size="15.0" />
+                                                </font>
+                                            </Label>
+                                            <Label fx:id="hardGameTimePlayed" layoutX="42.0" layoutY="31.0" text="hardGameTimePlayed">
+                                                <font>
+                                                    <Font size="15.0" />
+                                                </font>
+                                            </Label>
+                                            <Label fx:id="hardGameMistakes" layoutX="42.0" layoutY="53.0" text="hardGameMistakesMade">
+                                                <font>
+                                                    <Font size="15.0" />
+                                                </font>
+                                            </Label>
+                                            <Label fx:id="hardGameBestTime" layoutX="42.0" layoutY="74.0" text="hardGameBestTime">
+                                                <font>
+                                                    <Font size="15.0" />
+                                                </font>
+                                            </Label>
+                                        </children>
+                                        <padding>
+                                            <Insets bottom="5.0" />
+                                        </padding>
+                                    </VBox>
+                                    <VBox alignment="TOP_CENTER" layoutX="459.0" layoutY="10.0" prefHeight="200.0" prefWidth="80.0" spacing="5.0">
+                                        <children>
+                                            <Label text="%expert">
+                                                <font>
+                                                    <Font size="15.0" />
+                                                </font>
+                                            </Label>
+                                            <Label fx:id="veryHardGameStarted" text="veryHardGameStarted">
+                                                <font>
+                                                    <Font size="15.0" />
+                                                </font>
+                                            </Label>
+                                            <Label fx:id="veryHardGameWon" layoutX="42.0" layoutY="10.0" text="veryHardGameWon">
+                                                <font>
+                                                    <Font size="15.0" />
+                                                </font>
+                                            </Label>
+                                            <Label fx:id="veryHardGameTimePlayed" layoutX="42.0" layoutY="31.0" text="veryHardGameTimePlayed">
+                                                <font>
+                                                    <Font size="15.0" />
+                                                </font>
+                                            </Label>
+                                            <Label fx:id="veryHardGameMistakes" layoutX="42.0" layoutY="53.0" text="veryHardGameMistakesMade">
+                                                <font>
+                                                    <Font size="15.0" />
+                                                </font>
+                                            </Label>
+                                            <Label fx:id="veryHardGameBestTime" layoutX="10.0" layoutY="117.0" text="veryHardGameMistakesMade">
+                                                <font>
+                                                    <Font size="15.0" />
+                                                </font>
+                                            </Label>
+                                        </children>
+                                        <padding>
+                                            <Insets bottom="5.0" />
+                                        </padding>
+                                    </VBox>
+                                </HBox>
+                            </children>
+                        </VBox>
+                    </children>
+                </VBox>
+            </HBox>
+        </center>
+    </BorderPane>
+</AnchorPane>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" prefHeight="477.0" prefWidth="595.0" xmlns="http://javafx.com/javafx/19"
+            fx:controller="ch.zhaw.pm2.amongdigits.controller.ChallengesController">
+    <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <top>
+            <VBox prefHeight="100.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+                <children>
+                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                        <children>
+                            <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0">
+                                <children>
+                                    <Button fx:id="mainMenu" minHeight="30.0" minWidth="80.0" mnemonicParsing="false"
+                                            prefHeight="30.0" prefWidth="80.0" text="%main_menu">
+                                        <padding>
+                                            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                        </padding>
+                                    </Button>
+                                </children>
+                            </HBox>
+                            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="400.0">
+                                <children>
+                                    <Label alignment="CENTER" contentDisplay="CENTER" minHeight="50.0" prefWidth="400.0"
+                                           text="%challenges_title" textAlignment="CENTER">
+                                        <font>
+                                            <Font size="40.0"/>
+                                        </font>
+                                    </Label>
+                                </children>
+                            </HBox>
+                            <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0"/>
+                        </children>
+                    </HBox>
+                    <Separator prefWidth="200.0"/>
+                </children>
+            </VBox>
+        </top>
+        <center>
+            <HBox alignment="CENTER" minHeight="300.0" minWidth="300.0" prefHeight="300.0" prefWidth="300.0"
+                  spacing="20.0" BorderPane.alignment="CENTER">
+                <VBox alignment="CENTER" prefHeight="380.0" prefWidth="300.0" spacing="10.0">
+                    <children>
+                        <Label text="%pre_generated">
+                            <font>
+                                <Font size="15.0"/>
+                            </font>
+                        </Label>
+                        <ListView fx:id="preGeneratedChallenges" maxWidth="275.0" prefHeight="275.0" prefWidth="275.0"/>
+                        <Button fx:id="playPreGenerated" alignment="CENTER" mnemonicParsing="false" prefHeight="30.0"
+                                prefWidth="275.0" text="%play_selected_challenge"/>
+                    </children>
+                </VBox>
+                <Separator orientation="VERTICAL" prefHeight="200.0"/>
+                <VBox alignment="CENTER" prefHeight="380.0" prefWidth="300.0" spacing="10.0">
+                    <children>
+                        <Label alignment="CENTER" text="%user_generated">
+                            <font>
+                                <Font size="15.0"/>
+                            </font>
+                        </Label>
+                        <ListView fx:id="userGeneratedChallenges" maxWidth="275.0" prefHeight="275.0"
+                                  prefWidth="275.0"/>
+                        <Button fx:id="playUserGenerated" mnemonicParsing="false" prefHeight="30.0" prefWidth="275.0"
+                                text="%play_selected_challenge"/>
+                    </children>
+                </VBox>
+            </HBox>
+        </center>
+    </BorderPane>
+</AnchorPane>

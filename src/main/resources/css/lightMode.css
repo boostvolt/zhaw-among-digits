@@ -1,0 +1,119 @@
+.root {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: black;
+    -fx-base: white;
+}
+
+.button {
+    -fx-background-color: indianred;
+    -fx-text-fill: black;
+}
+
+.button:hover {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+.choice-box {
+    -fx-background-color: indianred;
+    -fx-text-fill: black;
+}
+
+.choice-box .label:hover {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+.text-field {
+    -fx-background-color: indianred;
+    -fx-text-inner-color: black;
+}
+
+.check-box {
+    -fx-text-fill: black;
+}
+
+.label {
+    -fx-text-fill: black;
+}
+
+GridPane Line {
+    -fx-stroke: black;
+}
+
+GridPane Label {
+    -fx-border-color: black;
+}
+
+GridPane GridPane Label {
+    -fx-border-width: 0;
+}
+
+.sudokuGridSelectedField {
+    -fx-background-color: black;
+    -fx-text-fill: blue;
+}
+
+.sudokuGridSelectedRowAndColum {
+    -fx-background-color: grey;
+}
+
+.sudokuLabelGiven {
+    -fx-text-fill: white;
+}
+
+-sudokuLabelCorrect {
+    -fx-text-fill: green;
+}
+
+.sudokuLabelIncorrect {
+    -fx-text-fill: red;
+}
+
+.toggle-button {
+    -fx-background-color: indianred;
+    -fx-text-fill: black;
+}
+
+.toggle-button:hover {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+.toggle-button:selected {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}
+
+.dialog-pane {
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}
+
+/**Customization of The Bar where the buttons are located**/
+.dialog-pane > .button-bar > .container {
+
+}
+
+/**Alert Content**/
+.dialog-pane > .content.label {
+    -fx-padding: 0.5em 0.5em 0.5em 0.5em;
+    -fx-font-size: 15px;
+}
+
+.dialog-pane .header-panel .label {
+    -fx-background-radius: 10px;
+    -fx-font-size: 40px;
+}
+
+
+/**Customization of Buttons**/
+.dialog-pane .button {
+    -fx-wrap-text: true;
+    -fx-effect: dropshadow(three-pass-box, black, 10.0, 0.0, 0.0, 0.0);
+    -fx-cursor: hand;
+}
+
+.dialog-pane .button:hover {
+    -fx-font-weight: bold;
+}

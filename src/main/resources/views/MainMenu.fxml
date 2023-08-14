@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="rootPane" minHeight="350.0" minWidth="450.0" prefHeight="472.0" prefWidth="456.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ch.zhaw.pm2.amongdigits.controller.MainMenuController">
+   <BorderPane prefHeight="334.0" prefWidth="450.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <center>
+          <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+               <ImageView fitHeight="219.0" fitWidth="299.0" pickOnBounds="true" preserveRatio="true">
+                   <Image url="@../media/MainMenu.gif" />
+               </ImageView>
+               <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+               <children>
+                   <Button fx:id="newGame" minHeight="30.0" minWidth="210.0" mnemonicParsing="false" text="%new_game">
+                       <padding>
+                           <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                       </padding>
+                   </Button>
+                   <Button fx:id="challenges" minHeight="30.0" minWidth="210.0" mnemonicParsing="false"
+                           text="%challenges_title">
+                       <padding>
+                           <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                       </padding>
+                   </Button>
+                   <HBox alignment="CENTER" prefHeight="40.0" prefWidth="450.0" spacing="10.0">
+                       <children>
+                           <Button fx:id="statistics" minHeight="30.0" minWidth="100.0" mnemonicParsing="false"
+                                   text="%statistics">
+                               <padding>
+                                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                               </padding>
+                           </Button>
+                           <Button fx:id="settings" minHeight="30.0" minWidth="100.0" mnemonicParsing="false"
+                                   text="%settings">
+                               <padding>
+                                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0"/>
+                                </padding>
+                            </Button>
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets top="50.0" />
+               </padding>
+               </VBox>
+          </VBox>
+      </center>
+      <top>
+         <VBox prefHeight="100.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+            <children>
+               <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+                  <children>
+                     <Label alignment="CENTER" contentDisplay="CENTER" minHeight="50.0" prefWidth="300.0" text="%game_title" textAlignment="CENTER">
+                        <font>
+                           <Font size="40.0" />
+                        </font>
+                     </Label>
+                  </children>
+               </HBox>
+               <Separator prefWidth="200.0" />
+            </children>
+         </VBox>
+      </top>
+   </BorderPane>
+</AnchorPane>
